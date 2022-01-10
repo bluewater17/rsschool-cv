@@ -4,10 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    d
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item"><a href="#summary-block" class="list-link">Summary</a></li>
+            <li class="navigation-item"><a href="#contacts-block" class="list-link">Contacts</a></li>
+            <li class="navigation-item"><a href="#skills-block" class="list-link">Skills</a></li>
+            <li class="navigation-item"><a href="#code-block" class="list-link">Code Example</a></li>
+            <li class="navigation-item"><a href="#projects-block" class="list-link">Projects</a></li>
+            <li class="navigation-item"><a href="#education-block" class="list-link">Education</a></li>
+            <li class="navigation-item"><a href="#english-block" class="list-link">English</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="about">
+          <img class="photo" src="assets/ph.png" alt="photo" width="200" height="200" />
+          <h1 class="name">Dmitry Skrinnikov</h1>
+        </section>
+        <div class="main-blocks">
+          <section id="summary-block" class="block">
+            <h2 class="summary-heading heading">Summary</h2>
+            <p class="summary-text">
+              I like programming. My goal is to learn a pure JavaScript at a good level and learn React framework. I
+              will be glad to join the creation of open source projects. I would like to work under the guidance of an
+              experienced developer to gain practical experiance.
+            </p>
+          </section>
+          <section id="contacts-block" class="block">
+            <h2 class="contacts-heading heading">Contacts</h2>
+            <ul class="contacts-list">
+              <li class="contacts-item">Location: Minsk, Belarus</li>
+              <li class="contacts-item">Telegram: @bluewater17</li>
+              <li class="contacts-item">Discord: dimon4ick#1881</li>
+            </ul>
+          </section>
+          <section id="skills-block" class="block">
+            <h2 class="skills-heading heading">Skills</h2>
+            <ul class="skills-list">
+              <li class="skills-item">HTML</li>
+              <li class="skills-item">CSS</li>
+              <li class="skills-item">Git</li>
+              <li class="skills-item">JS(Basics)</li>
+            </ul>
+          </section>
+          <section id="projects-block" class="block">
+            <h2 class="projects-heading heading">Projects</h2>
+            <a href="https://bluewater17.github.io/rsschool-cv/" class="projects-link" target="_blank">CV</a>
+          </section>
+          <section id="education-block" class="block">
+            <h2 class="education-heading heading">Education</h2>
+            <ul class="education-list">
+              <li class="education-item">BNTU</li>
+              <li class="education-item">Magistracy at Academy of sciences of Belarus</li>
+              <li class="education-item">Html academy free courses</li>
+            </ul>
+          </section>
+          <section id="english-block" class="block">
+            <h2 class="english-heading heading">English</h2>
+            <p class="my-english-lvl">B1</p>
+          </section>
+          <section id="code-block" class="block">
+            <h2 class="code-heading heading">Code</h2>
+            <pre class="code-example">
+              let reverse = (n) => {
+              let array = n.toString().split('')
+                if (array[0] == '-') {
+                  let minus = array.shift()
+                }
+              return Number(array.reverse().join(''))
+              }
+            </pre>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="year">2022</p>
+          <a href="https://github.com/bluewater17" class="git-link" target="_blank"
+            ><img class="git-pic" src="assets/GitHub-Mark-64px.png" alt="git-logo"
+          /></a>
+          <a href="https://rs.school" class="rs-link" target="_blank"
+            ><img class="rs-pic" src="assets/logo-rsschool.png" alt="rs-logo" height="64"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
