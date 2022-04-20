@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; 
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  color: whitesmoke;
+  background-color: rgb(136, 136, 248);
+  margin-bottom: 20px;
+}
+
+.navigation-list {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+.navigation-item {
+  margin-right: 20px;
+}
+.navigation-item:last-child {
+  margin: 0;
+}
+.list-link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.list-link:hover {
+  border-bottom: 1px solid whitesmoke;
+}
+
+.main {
+  margin: 0 10px 0 10px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;  
+  margin-bottom: 20px;
+}
+.photo {
+  border-radius: 50%;
+}
+.name {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
+  align-self: center;
+  border-bottom: 3px solid black;
+}
+.main-blocks {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.block {
+  width: 45%;
+  padding: 10px;
+  padding-top: 0px;
+  margin: 0 10px 10px 0;
+  border-bottom: 4px solid grey;
+}
+.heading {
+  color: rgb(136, 136, 248);
+  font-family: 'Poppins', sans-serif;
+}
+#code-block {
+
+}
+.code-example {
+  margin: 0 0 0 -100px;
+}
+.projects-link {
+  color: black;
+}
+.footer {
+  background-color: rgb(136, 136, 248);
+}
+.footer-content {
+  display: flex;
+  line-height: 0;
+  margin: 10px;
+  justify-content: center;
+}
+.year {
+  font-size: 1.3em;
+  align-self: center;
+}
+.git-link {
+  margin: 0 60px;
+}
